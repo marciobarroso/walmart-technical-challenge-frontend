@@ -2,7 +2,7 @@
 
 ## Create Hello World with React and Typescript
 
-## Create the base layout with flex box and css grid
+## Create the base layout with flex box for components and css grid for layout
 
 ## Create form field for the search
 
