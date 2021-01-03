@@ -16,5 +16,8 @@ COPY . .
 # Uses port which is used by the actual application
 EXPOSE 8080
  
+# set variables to local execution
+ENV API_URL=http://localhost:3000
+
 # Finally runs the application
 CMD [ "npm", "start" ]
