@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { FC } from 'react'
 import ProductList from '../ProductList'
-import products from '../../products'
 
 import './main.css'
+import IProduct from '../Product/IProduct'
 
-const Main = () => {
+const Main: FC<{ products: IProduct[] }> = ({ products }) => {
   return (
     <main>
       <ProductList products={products} />
