@@ -7,6 +7,8 @@ import Main from '../Main'
 function App() {
   const API_URL = process.env.API_HOST ? process.env.API_HOST : 'http://api.data-matters.io'
 
+  console.log('call api from : ', API_URL)
+
   let [products, setProducts] = useState([])
   let [filter, setFilter] = useState('')
   let [page, setPage] = useState(1)
