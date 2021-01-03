@@ -51,3 +51,12 @@ make docker-run
 ```
 
 The application will be available on [http://localhost:8080](http://localhost:8080)
+
+## PENDING
+
+- [ ] Improving provisioning of environment variables without webpack
+- [ ] Create page footer
+- [ ] Create paging component or infinite scrolling with lazy loading
+- [ ] Create Shopping Cart
+- [ ] Allow product to be picked
+- [ ] Create page to display single product
