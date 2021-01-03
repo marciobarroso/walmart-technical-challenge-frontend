@@ -28,7 +28,7 @@ Using [Docker]() to create a app container to easily execute the app
 
 # TO EXECUTE
 
-## Locally
+## Locally
 
 ```
 npm start
