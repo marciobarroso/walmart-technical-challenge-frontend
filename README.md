@@ -60,3 +60,5 @@ The application will be available on [http://localhost:8080](http://localhost:80
 - [ ] Create Shopping Cart
 - [ ] Allow product to be picked
 - [ ] Create page to display single product
+- [ ] Create a loading component
+- [ ] Create unit, integration y functional tests
