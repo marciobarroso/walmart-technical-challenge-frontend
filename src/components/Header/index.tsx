@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faUser, faChevronDown, faShoppingCart, faCircle } from '@fortawesome/free-solid-svg-icons'
-import React, { FC, SyntheticEvent, useState } from 'react'
+import React, { FC, useState } from 'react'
 
 import Image from '../Image'
 
