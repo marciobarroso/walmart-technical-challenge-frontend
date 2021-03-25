@@ -7,14 +7,13 @@ import Main from '../Main'
 function App() {
   const API_URL = process.env.API_HOST ? process.env.API_HOST : 'http://api.data-matters.io'
 
-  console.log('call api from : ', API_URL)
-
   let [products, setProducts] = useState([])
   let [filter, setFilter] = useState('')
-  let [page, setPage] = useState(1)
-
+  let [loading, isLoading] = useState(true)
+  
   useEffect(() => {
     call()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const submit = () => {
@@ -23,16 +22,18 @@ function App() {
   }
 
   const call = () => {
+    isLoading(true)
     axios.get(`${API_URL}/api/v1/products?filter=${filter}`)
       .then(response => {
         setProducts(response.data)
+        isLoading(false)
       })
   }
 
   return (
     <div id='app' className="app">
       <Header setFilter={ setFilter } submit={ submit } />
-      <Main products={ products }/>
+      <Main products={ products } loading={ loading } />
     </div>
   )
 }
